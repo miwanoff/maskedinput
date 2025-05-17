@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Phone</h1>
+    <input type="text" placeholder="+38 (___) ___ ____" id="phone" name="phone1" title="Формат: (099) 999 9999" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="jquery.maskedinput.js"></script>
+    <script>
+        $(document).ready(function ($) {
+            $("#phone").mask("+38 (999)-999-9999", { autoсlear: false });
+        });
+    </script>
+</body>
+
+</html>
