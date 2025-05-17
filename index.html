@@ -5,16 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Owl Stylesheets -->
+    <!-- <link rel="stylesheet" href="owlcarousel/assets/owlcarousel/assets/owl.carousel.min.css"> -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.css">
+    <!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
 </head>
 
 <body>
     <h1>Phone</h1>
+    <div id="owl-example" class="owl-carousel">
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+    </div>
     <input type="text" placeholder="+38 (___) ___ ____" id="phone" name="phone1" title="Формат: (099) 999 9999" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <script src="jquery.maskedinput.js"></script>
     <script>
         $(document).ready(function ($) {
             $("#phone").mask("+38 (999)-999-9999", { autoсlear: false });
+            $("#owl-example").owlCarousel();
+
         });
     </script>
 </body>
